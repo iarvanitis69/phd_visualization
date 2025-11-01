@@ -1,10 +1,6 @@
-# 📘 DataAcquisition Repository
-This repository contains the code for pre-prosessing.
+# 📘 Visualization Repository
+This repository contains the code for Visualization.
 ---
-
-![img.png](img.png)
-
-
 
 ## 🧩 Installation
 
