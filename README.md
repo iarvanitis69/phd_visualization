@@ -1,47 +1,12 @@
 # 📘 Visualization Repository
-This repository contains the code for Visualization.
----
 
-## 🧩 Installation
+## Visualization
 
-### Install Miniconda on Windows/Linux
-The following procedure should be executed only once. If you already have installed Conda don't do it again
+## Installation
 
-#### Windows
+### Installation Prerequisites
 
-1. **Download the latest Miniconda installer**:  
-   [Miniconda3 Windows 64-bit](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe)
-
-2. **Run the `.exe` file as Administrator**.
-
-3. Choose:
-   - Installation type: **Just Me**
-   - **Add Miniconda to PATH** (optional but useful)
-
-4. **Complete the installation**.
-
-5. Open **Anaconda Prompt** or **Command Prompt**, and test:
-```bash
-   conda --version
-```
-
-#### Linux
-
-1. Download the latest installer for Linux:
-```bash
-   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-```
-2. Run the installer:
-```bash
-   bash Miniconda3-latest-Linux-x86_64.sh
-```
-   Follow the on-screen instructions (press Enter, accept license, choose install location, etc).
-
-3. After installation, run:
-```bash
-   source ~/.bashrc
-   conda --version
-```
+Conda should be installed and data should be acquired using Data_Acquisition project
 
 ### Clone the Repository
 ```bash
@@ -49,33 +14,27 @@ git clone https://github.com/iarvanitis69/phd_visualization.git
 cd phd_visualization
 ```
 
-### Activate Basic Conda Environment
-You need to activate environment only once
+### Activate Basic Conda Commands
 
-1. Change environment 
+1. Change directory
 ```bash
-cd phd_visualization
+cd phd_preprocessing
 ```
-2. Install Conda environment/depenndencies
+
+2. Activate Conda environment
 ```bash
-   conda env create -f environment.yml
-```` 
-3. Activate Conda environment
-```bash
-   conda activate phd_cond_env
+   conda activate phd_cond_env_p10
 ```
 ---
 
-## Event Base Execution
-
-### Run the DataAcquisition Project
-```bash
-cd phd_visualization
+## Execute Preprocessing
+```base
 python main.py <mseed file>
 ```
 
-
-
-
-
-
+## Visualization tasks
+With the help of this repository, we can visualize anything that needs to be displayed as part of the project we are 
+referring to—namely, GreensonNet and its results.
+In the first phase, what has been implemented is the ability to display msync files, and in fact, to interact with them:
+that is, to zoom into specific regions, perform panning, and normalize the signal. This is the initial functionality. 
+Additional features will follow in the next stages.
